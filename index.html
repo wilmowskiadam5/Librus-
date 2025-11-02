@@ -1,0 +1,109 @@
+<!doctype html>
+
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Librus — komunikat</title>
+  <style>
+    :root {
+      --bg1: #0d1117;
+      --bg2: #161b22;
+      --accent: #2f81f7;
+      --text: #e6edf3;
+      --card: rgba(255, 255, 255, 0.06);
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color: var(--text);
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: linear-gradient(180deg, var(--bg1), var(--bg2));
+      padding: 24px;
+    }
+    header {
+      width: 100%;
+      max-width: 960px;
+      text-align: center;
+      margin-top: 24px;
+    }
+    .brand {
+      font-size: 42px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      color: var(--accent);
+      margin-bottom: 20px;
+      text-shadow: 0 0 12px rgba(47, 129, 247, 0.4);
+    }
+    main {
+      width: 100%;
+      max-width: 960px;
+      flex: 1 0 auto;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    footer {
+      width: 100%;
+      max-width: 960px;
+      text-align: center;
+      margin-bottom: 12px;
+    }
+    .notice {
+      font-size: 20px;
+      padding: 20px 26px;
+      border-radius: 14px;
+      background: var(--card);
+      backdrop-filter: blur(6px);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      display: inline-block;
+      animation: fadeIn 1.5s ease-in-out;
+      text-align: left;
+      line-height: 1.6;
+    }
+    .notice strong {
+      display: block;
+      font-size: 24px;
+      margin-bottom: 8px;
+      color: #ff7b72;
+    }
+    .meta {
+      font-size: 14px;
+      opacity: 0.6;
+      margin-top: 20px;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @media (max-width: 520px) {
+      .brand { font-size: 30px; }
+      .notice { font-size: 16px; padding: 14px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">Librus</div>
+  </header>
+  <main>
+    <div class="notice">
+      <strong>Komunikat Dyrekcji Szkoły</strong>
+      W dniu <strong>3 listopada 2025</strong> zajęcia dla wszystkich klas zostają odwołane.<br><br>
+      Powód: część nauczycieli uczestniczy w obowiązkowym zebraniu organizacyjnym w kuratorium oświaty.<br><br>
+      Zajęcia zostaną odpracowane w innym terminie, o czym poinformujemy przez Librusa.
+      <div class="meta">Ostatnia aktualizacja: 2 listopada 2025, godz. 18:00</div>
+    </div>
+  </main>
+  <footer>
+  </footer>
+</body>
+</html>
